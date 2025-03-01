@@ -1,12 +1,12 @@
-function findTarget(array, target){
-  for(i=0; i<array.length; i++){
-
-    if(array[i] === target){
+function findTarget(array, target) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === target) {
       return i;
     }
-    
   }
-  return i-1;
+  return -1;
 }
 
-console.log(findTarget([2,3,4,5,6,7]))
+const Array = [3, 4, 6, 9, 67, 40];
+const ans = findTarget(Array, 40);
+console.log(ans);
